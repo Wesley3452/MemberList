@@ -1,0 +1,22 @@
+<div class="row">
+<div class="col-sm-12">
+<button class="btn btn-primary btn-lg">
+Add new Member
+</button>
+</div>
+</div>
+<h2>List of Members</h2>
+<div class="row" *ngFor="let member of members">
+<div class="col-sm-8">
+<h4>{{member.id}}: {{member.name}}</h4>
+</div>
+<div class="col-sm-4" style="margin-top: 5px;">
+<div class="pull-right">
+<button class="btn btn-warning btn-sm">
+Edit
+</button>
+<button class="btn btn-danger btn-sm">Delete
+</button>
+</div>
+</div>
+</div>
